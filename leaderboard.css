@@ -1,0 +1,41 @@
+body{
+    width: 100%;   
+}
+
+.table{
+    background-color: white !important;
+}
+.row{
+color: black !important;
+}
+td {
+    color: black !important;
+    border: none !important;
+}
+th{
+    color: black !important;
+    background: #4FC7FF;
+    border: none !important;
+}
+#pic-container{
+    padding: 40px;
+    display: flex;
+    width: 80%;
+    height: 450px;
+    left: 260px;
+    top: 650px;
+
+}
+
+#table-container{
+    padding-right: 20px;
+    float: right;
+    width: 83%;
+    height: 64px;
+    left: 260px;
+    top: 650px;
+    margin: 10px;
+    
+
+}
+
