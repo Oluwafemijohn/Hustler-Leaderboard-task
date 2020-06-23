@@ -19,8 +19,9 @@ body {
   height: 100vh;
   overflow: auto;
   z-index: 1;
-  top: 0;
+  top: 7px;
   left: 0;
+  margin-left: 8px;
 }
 
 .sidebar .icon {
@@ -34,19 +35,40 @@ body {
 .sidebar i {
   padding: 0 5px;
 }
+
+.sidebar .fa-bars {
+  color: black;
+  padding-right: 8px;
+}
 .sidebar .tracks{
   margin-top: 20px;
 }
 .sidebar .tracks a {
   display: block;
   color: black;
-  padding-left: 30px;
+  font-weight: bold;
+  padding-left: 35px;
   padding-bottom: 25px;
   text-decoration: none;
 }
 
-.sidebar a .square {
-  padding-left: 10px;
+.sidebar a .square1 {
+  padding-left: 3.1rem;
+}
+
+.sidebar a .square2 {
+  padding-left: 0.3rem;
+}
+
+.sidebar a .square3 {
+  padding-left: 0.9rem;
+}
+
+.sidebar a .square4 {
+  padding-left: 1.7rem;
+}
+.fa-square {
+  width: 10px;
 }
 
 .fa-square-o {
@@ -92,9 +114,13 @@ button {
   border-radius: 10px;
   margin-top: 2rem;
   margin-left: 20px;
-  font-size: 16px;
+  padding: 6px;
+  font-size: 18px;
   color: #767676;
   background-color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 button i {
@@ -109,15 +135,20 @@ button i {
   }
 
 @media screen and (max-width: 400px) {
-  .sidebar {padding-top: 15px;
+  .sidebar {
+    padding-top: 15px;
     height: 100vh;
-    width: 170px;}
-  .sidebar a {font-size: 16px;}
+    width: 170px;
+  }
+
+  .sidebar a {
+    font-size: 16px;
+  }
 
   .social-icon {
   text-align: center;
   margin-top: 10rem;
-}
+  }
 }
 </style>
 </head>
@@ -129,10 +160,10 @@ button i {
   </div>
 
   <div class="tracks">
-    <a href="#ui/ux">UI/UX<span><i class="fa fa-square"></i></span></a>
-    <a href="#frontend">FRONTEND<span><i class="fa fa-square-o"></i></span></a>
-    <a href="#backend">BACKEND<span><i class="fa fa-square-o"></i></span></a>
-    <a href="#devops">DEVOPS<span><i class="fa fa-square-o"></i></span></a>
+    <a href="#ui/ux">UI/UX<span class="square1"><i class="fa fa-square"></i></span></a>
+    <a href="#frontend">FRONTEND<span class="square2"><i class="fa fa-square-o"></i></span></a>
+    <a href="#backend">BACKEND<span class="square3"><i class="fa fa-square-o"></i></span></a>
+    <a href="#devops">DEVOPS<span class="square4"><i class="fa fa-square-o"></i></span></a>
   </div>
 
   <button>Sort by rank<i class="material-icons">&#xe5cf;</i></button>
@@ -143,7 +174,7 @@ button i {
     <a href="#" class="fa fa-linkedin"></a>
     <a href="#" class="fa fa-facebook"></a>
   </div>
-  
+
 </div>
 
 </body>
