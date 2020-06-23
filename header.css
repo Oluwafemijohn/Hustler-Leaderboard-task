@@ -1,0 +1,49 @@
+#text{
+    color: blue;
+}
+#button{
+    color: white;
+    background-color: blue;
+}
+.pool1{
+    position: absolute;
+width: 300px;
+height: 374px;
+left: 346px;
+top: 225px;
+
+background: #4FC7FF;
+}
+.pool2{
+    position: absolute;
+width: 40px;
+height: 40px;
+left: 505px;
+top: 242px;
+
+background: url(.png);
+}
+.pool3{
+    position: absolute;
+width: 40px;
+height: 40px;
+left: 455px;
+top: 242px;
+
+background: url(.png);
+}
+
+.pool4{
+    position: absolute;
+width: 493px;
+height: 274px;
+left: 250px;
+top: 291px;
+
+background: url(xKrz9NFg9B.jpg);
+}
+#top{
+    position: absolute;
+    top: 50px;
+    left: 57px;
+}
