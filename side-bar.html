@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Side Bar</title>
+<style>
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #4FC7FF;
+  position: fixed;
+  height: 100vh;
+  overflow: auto;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.sidebar .icon {
+  display: inline-block;
+}
+
+.sidebar h2 {
+  color: #FFFFFF;
+}
+
+.sidebar i {
+  padding: 0 5px;
+}
+.sidebar .tracks{
+  margin-top: 20px;
+}
+.sidebar .tracks a {
+  display: block;
+  color: black;
+  padding-left: 30px;
+  padding-bottom: 25px;
+  text-decoration: none;
+}
+
+.sidebar a .square {
+  padding-left: 10px;
+}
+
+.fa-square-o {
+  color: white;
+}
+
+.social-icon {
+  text-align: center;
+  margin-top: 13rem;
+}
+
+.social-icon p {
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.social-icon .fa {
+  margin: 3px 2px;
+  width: 20px;
+  padding: 5px;
+}
+
+.fa-facebook {
+  background: black;
+}
+
+.fa-linkedin {
+  background: black;
+}
+.fa-twitter {
+  background: black;
+}
+
+.social-icon a {
+  display: inline-block;
+  color: #4FC7FF;
+  text-decoration: none;
+  border-radius: 50%;
+}
+button {
+  border: none;
+  border-radius: 10px;
+  margin-top: 2rem;
+  margin-left: 20px;
+  font-size: 16px;
+  color: #767676;
+  background-color: white;
+}
+
+button i {
+  color: black;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 200px;
+    height: 100vh;
+    position: relative;
+  }
+
+@media screen and (max-width: 400px) {
+  .sidebar {padding-top: 15px;
+    height: 100vh;
+    width: 170px;}
+  .sidebar a {font-size: 16px;}
+
+  .social-icon {
+  text-align: center;
+  margin-top: 10rem;
+}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="icon">
+    <h2><i class="fa fa-bars"></i>TRACKS</h2>
+  </div>
+
+  <div class="tracks">
+    <a href="#ui/ux">UI/UX<span><i class="fa fa-square"></i></span></a>
+    <a href="#frontend">FRONTEND<span><i class="fa fa-square-o"></i></span></a>
+    <a href="#backend">BACKEND<span><i class="fa fa-square-o"></i></span></a>
+    <a href="#devops">DEVOPS<span><i class="fa fa-square-o"></i></span></a>
+  </div>
+
+  <button>Sort by rank<i class="material-icons">&#xe5cf;</i></button>
+
+  <div class="social-icon">
+    <p>SHARE</p>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-facebook"></a>
+  </div>
+  
+</div>
+
+</body>
+</html>
